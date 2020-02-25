@@ -12,7 +12,7 @@
 
 @font-face {
   font-family: "open-sans";
-  src: url(../fonts/OpenSansCondensed-Light.ttf);
+  src: url(../fonts/BarlowCondensed-Medium.ttf);
   font-display: swap;
 }
 
@@ -54,3 +54,17 @@ $darkBlue: #18132a;
   top: -5rem;
   right: 0;
 }
+
+.blob-splash {
+  left: 20%;
+  bottom: 1%;
+}
+
+.small-splash {
+  top: 5%;
+  right: 25%;
+}
+
+// .lightSVG {
+//   fill: white;
+// }
