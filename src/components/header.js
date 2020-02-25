@@ -7,7 +7,7 @@ import Logo from "../assets/text-logo2.svg"
 
 const Header = ({ siteTitle }) => (
   <header>
-    <div className="flex justify-between items-center py4 md:hidden">
+    <div className="flex justify-between items-center py4 md:hidden hidden">
       <div className="flex-shrink-0 ml-10 cursor-pointer">
         <Logo className=" h-10" />
       </div>

@@ -1,0 +1,56 @@
+@font-face {
+  font-family: "amatic";
+  src: url(../fonts/AmaticSC-Regular.ttf);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "quicksand";
+  src: url(../fonts/Quicksand-Light.ttf);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "open-sans";
+  src: url(../fonts/OpenSansCondensed-Light.ttf);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "serif-pro";
+  src: url(../fonts/SourceSerifPro-Regular.ttf);
+  font-display: swap;
+}
+
+//fonts
+
+.amatic {
+  font-family: "amatic";
+}
+
+.quicksand {
+  font-family: "quicksand";
+}
+
+.open-sans {
+  font-family: "open-sans";
+}
+
+.serif-pro {
+  font-family: "serif-pro";
+}
+
+//colors
+
+$darkRed: #4f0000;
+$pink: #ff0481;
+$brown: #7f6c73;
+$lightestBlue: #eaffff;
+$lightBlue: #96c2c1;
+$darkBlue: #18132a;
+
+.bird {
+  fill: $darkBlue;
+  top: -5rem;
+  right: 0;
+}

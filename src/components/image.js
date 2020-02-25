@@ -1,32 +1,95 @@
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
+import { StaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
-/*
- * This component is built using `gatsby-image` to automatically serve optimized
- * images with lazy loading and reduced file sizes. The image is loaded using a
- * `useStaticQuery`, which allows us to load the image from directly within this
- * component, rather than having to pass the image data down from pages.
- *
- * For more information, see the docs:
- * - `gatsby-image`: https://gatsby.dev/gatsby-image
- * - `useStaticQuery`: https://www.gatsbyjs.org/docs/use-static-query/
- */
+// Note: You can change "images" to whatever you'd like.
 
-const Image = () => {
-  const data = useStaticQuery(graphql`
-    query {
-      placeholderImage: file(relativePath: { eq: "gatsby-astronaut.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 300) {
-            ...GatsbyImageSharpFluid
+const Images = ({ render }) => (
+  <StaticQuery
+    query={graphql`
+      query {
+        large: allFile {
+          edges {
+            node {
+              relativePath
+              name
+              childImageSharp {
+                fluid(maxWidth: 1400, quality: 50) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+          }
+        }
+        medium: allFile {
+          edges {
+            node {
+              relativePath
+              name
+              childImageSharp {
+                fluid(maxWidth: 1000, quality: 50) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+          }
+        }
+        small: allFile {
+          edges {
+            node {
+              relativePath
+              name
+              childImageSharp {
+                fluid(maxWidth: 500, quality: 50) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+          }
+        }
+
+        xsmall: allFile {
+          edges {
+            node {
+              relativePath
+              name
+              childImageSharp {
+                fluid(maxWidth: 300, quality: 50) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
           }
         }
       }
-    }
-  `)
+    `}
+    render={render}
+  />
+)
 
-  return <Img fluid={data.placeholderImage.childImageSharp.fluid} />
+const Image = ({ type = "large", src = "", fileName, ...props }) => {
+  const imageFolderSrc =
+    src.split("images/").length === 2 && src.split("images/")[1]
+  const render = data => {
+    const image = data[type].edges.find(n => {
+      return n.node.relativePath.includes(imageFolderSrc || fileName || src)
+    })
+
+    // if (src.indexOf(".gif") || src.indexOf(".svg")) {
+    //   throw new Error(
+    //     "SVG (.svg) and GIF (.gif) filetypes are not allowed. Try using a PNG or JPG"
+    //   )
+    // }
+
+    if (!image) {
+      throw new Error(`The src value ${src.split("images/")[1]} was not found.
+        Look in the src/images directory to check the filename`)
+    }
+
+    return <Img {...props} fluid={image.node.childImageSharp.fluid} />
+  }
+
+  return <Images render={render} />
 }
 
 export default Image
