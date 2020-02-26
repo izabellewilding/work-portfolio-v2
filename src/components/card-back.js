@@ -7,14 +7,7 @@ import GitHub from "../assets/github-darkRed.svg"
 const CardBack = ({ ...props }) => {
   return (
     <div className="card-back" {...props}>
-      <div className="card-back-image-wrapper" {...props}>
-        <Img
-          src={props.cardImage}
-          className="card-img"
-          style={{ position: "asbsolute" }}
-        />
-        <div className="card-gradient"></div>
-      </div>
+      <div className="card-gradient"></div>
 
       <div className="card-text-wrapper">
         <h3 className="card-back-title" style={{ color: "#18132a" }}>

@@ -25,15 +25,14 @@ const Card = ({ cardFront, cardBack }) => {
 const Projects = ({ ...props }) => {
   return (
     <main className="project-section">
-      <section className="projects pb-20 -mt-24">
+      <section className="projects pb-20 ">
         {" "}
         <Card
           cardFront={
             <CardFront
-              logo={<FoodBlogLogo />}
-              style={{
-                backgroundColor: "#18132a",
-              }}
+              // logo={<FoodBlogLogo />}
+              cardImage="../images/abof-img.png"
+              cardTitle="Food recipe blog"
             />
           }
           cardBack={
@@ -41,16 +40,12 @@ const Projects = ({ ...props }) => {
               listItem1="Search bar made with Elasticlunr"
               listItem2="Blog/recipe pages with React and Markdown"
               listItem3="Custom RMWC components"
-              style={
-                {
-                  // backgroundImage: `url(${cardImg1})`,
-                  // backgroundColor: "white",
-                }
-              }
+              style={{
+                backgroundColor: "#18132a",
+              }}
               gitLink="https://github.com/izabellewilding/gatsby-recipe-blog"
               siteLink="https://abitoffood.netlify.com/"
-              cardImage="../images/card2-img.png"
-              cardTitle="Food recipe blog"
+              // cardImage="../images/card2-img.png"
             />
           }
         />{" "}
@@ -58,10 +53,11 @@ const Projects = ({ ...props }) => {
           cardFront={
             <CardFront
               style={{
-                backgroundColor: "#18132a",
                 fontFamily: "europa",
               }}
-              logo={"Artist Photograph & Art Gallery"}
+              cardImage="../images/flickrapi-img.JPG"
+              // logo={"Artist Photograph & Art Gallery"}
+              cardTitle="Flickr Image Gallery"
             />
           }
           cardBack={
@@ -69,13 +65,12 @@ const Projects = ({ ...props }) => {
               listItem1="Live photostream with Flickr API"
               listItem2="Responsive image carousel"
               listItem3="Page slide transition using React Router"
-              // style={{
-              //   backgroundColor: "white",
-              // }}
+              style={{
+                backgroundColor: "#18132a",
+              }}
               gitLink="https://github.com/izabellewilding/flickr_API_artist_stream"
               siteLink="https://flickr-api-gallery.netlify.com/#/"
-              cardImage="../images/card1-img"
-              cardTitle="Flickr Image Gallery"
+              // cardImage="../images/card1-img"
             />
           }
         />
@@ -83,18 +78,21 @@ const Projects = ({ ...props }) => {
           cardFront={
             <CardFront
               style={{ backgroundColor: "#18132a" }}
-              logo={<ElecLogo />}
+              // logo={<ElecLogo />}
+              cardImage="../images/elec-site-img.png"
+              cardTitle="Small business website"
             />
           }
           cardBack={
             <CardBack
-              cardImage="../images/card3-img"
+              style={{
+                backgroundColor: "#18132a",
+              }}
               listItem1="Small business website"
               listItem2="Optimised for SEO with targeted keyword strategy"
               listItem3="Animated bespoke SVG icon nav bar"
               siteLink="https://www.alexwildingelectricalservices.com/"
               gitLink="https://github.com/izabellewilding/website-for-electrician"
-              cardTitle="Small business website"
             />
           }
         />

@@ -34,6 +34,7 @@ const Layout = ({ children }) => {
       {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
       <div className="scrolling-box"></div>
       <Header />
+
       <LandingPage />
       <Projects />
       <About />

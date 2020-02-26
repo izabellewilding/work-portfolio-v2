@@ -1,6 +1,7 @@
 import React from "react"
 import Image from "./image"
 import styled from "styled-components"
+import SocialIcons from "../components/social-icons.js"
 
 import Splash from "../assets/slash-nice.svg"
 import BlobSplash from "../assets/slash-blob.svg"
@@ -12,9 +13,10 @@ import Bird from "../assets/bird-green.svg"
 const Gradient = styled.div`
   background: linear-gradient(
     0deg,
-    rgba(0, 24, 37, 0.8277182699251575) 0%,
-    rgba(0, 99, 135, 0.2338807349111519) 36%,
-    rgba(0, 49, 118, 0) 64%
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 1, 62, 0.5055894183845413) 29%,
+    rgba(0, 13, 104, 0.15825048281031162) 59%,
+    rgba(198, 204, 214, 0) 100%
   );
 `
 
@@ -22,7 +24,9 @@ const LandingPage = () => {
   return (
     //landing page top
     <main className="gradient w-full h-screen relative items-center justify-center ">
+      {" "}
       <div className="relative w-full h-screen">
+        {" "}
         <Splash
           className=" absolute lightSVG bottom-0 splash "
           style={{ height: "35vh" }}
@@ -56,7 +60,7 @@ const LandingPage = () => {
       /> */}
       <Bird className="absolute opacity-75 bird" />{" "}
       <div className=" absolute opacity-25 bottom-0 right-0 top-0 left-0" />
-      {/* <Gradient className="w-full h-full absolute bottom-0 right-0 top-0 left-0 " /> */}
+      <Gradient className="w-full h-full absolute bottom-0 right-0 top-0 left-0 " />
       {/* <div className="absolute top-0 w-full h-full bg-center bg-cover"> */}{" "}
       <div className=" w-full h-full absolute bottom-0 right-0 top-0 left-0">
         {" "}
@@ -65,15 +69,16 @@ const LandingPage = () => {
           <h1 className=" mb-2 text-white text-5xl md:text-6xl uppercase test text-darkBlue">
             Izabelle Wilding
           </h1>{" "}
-          <p className="quicksand text-2xl md:text-4xl text-white">
-            Freelance Front-End Web Developer
-          </p>
-          {/* <button
+          <p className="quicksand text-2xl md:text-3xl text-white mb-6">
+            Freelance Web Developer
+          </p>{" "}
+          <SocialIcons />
+          <button
             class="absolute bottom-0 bg-transparent hover:bg-blue-500 text-blue-100 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded  quicksand"
             style={{ bottom: "21%" }}
           >
             Click to See Projects
-          </button> */}
+          </button>
         </div>{" "}
       </div>{" "}
       {/* </div>{" "} */}
