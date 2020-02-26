@@ -13,6 +13,9 @@ import "../styles/all.scss"
 import "../styles/gradient.scss"
 import Header from "./header"
 import LandingPage from "./landing-page"
+import Projects from "../components/projects.js"
+import Footer from "../components/footer.js"
+import About from "../components/about.js"
 // import Header from "./header"
 
 const Layout = ({ children }) => {
@@ -29,8 +32,12 @@ const Layout = ({ children }) => {
   return (
     <>
       {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
+      <div className="scrolling-box"></div>
       <Header />
       <LandingPage />
+      <Projects />
+      <About />
+      <Footer />
       {/* <footer>
         © {new Date().getFullYear()}, Built with
         {` `}

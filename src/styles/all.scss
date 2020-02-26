@@ -11,7 +11,7 @@
 }
 
 @font-face {
-  font-family: "open-sans";
+  font-family: "test";
   src: url(../fonts/BarlowCondensed-Medium.ttf);
   font-display: swap;
 }
@@ -32,27 +32,42 @@
   font-family: "quicksand";
 }
 
-.open-sans {
-  font-family: "open-sans";
+.test {
+  font-family: "test";
 }
 
 .serif-pro {
   font-family: "serif-pro";
 }
 
+.text-massive {
+  font-size: 6rem;
+}
 //colors
 
 $darkRed: #4f0000;
 $pink: #ff0481;
 $brown: #7f6c73;
 $lightestBlue: #eaffff;
-$lightBlue: #96c2c1;
 $darkBlue: #18132a;
+
+.text-darkBlue {
+  color: $darkBlue;
+}
+
+.bg-darkBlue {
+  background: $darkBlue;
+}
 
 .bird {
   fill: $darkBlue;
   top: -5rem;
   right: 0;
+  height: 22rem;
+
+  @media (min-width: 750px) {
+    height: 35rem;
+  }
 }
 
 .splash {
@@ -65,7 +80,6 @@ $darkBlue: #18132a;
 
 .splash2 {
   right: 20%;
-
   transform: rotateX(180deg);
 }
 
@@ -79,6 +93,10 @@ $darkBlue: #18132a;
   right: 25%;
 }
 
-// .lightSVG {
-//   fill: white;
-// }
+.lightSVG {
+  fill: $lightestBlue;
+}
+
+.card-stlye {
+  border: solid black 1px;
+}

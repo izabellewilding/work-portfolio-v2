@@ -1,14 +1,15 @@
 import React, { useState } from "react"
 
-import "../styles/projects.scss"
+import "../styles/card-back.scss"
 import "../styles/card-flip.css"
 import "../styles/card-front.scss"
+import "../styles/all.scss"
 
 import CardFront from "./card-front"
 import CardBack from "./card-back"
 import ElecLogo from "../assets/alex-wilding-logo.svg"
 import FoodBlogLogo from "../assets/bitoffood-underlined.svg"
-import Arrow from "../assets/arrow4-black.svg"
+// import Arrow from "../assets/arrow4-black.svg"
 
 const Card = ({ cardFront, cardBack }) => {
   return (
@@ -24,18 +25,14 @@ const Card = ({ cardFront, cardBack }) => {
 const Projects = ({ ...props }) => {
   return (
     <main className="project-section">
-      <header className="projects-title-wrapper">
-        <h1 className="page-title">My Projects</h1>
-        <Arrow className="arrow" />
-      </header>
-      <article className="projects">
+      <section className="projects pb-20 -mt-24">
         {" "}
         <Card
           cardFront={
             <CardFront
               logo={<FoodBlogLogo />}
               style={{
-                backgroundColor: "#d7ffff",
+                backgroundColor: "#18132a",
               }}
             />
           }
@@ -61,7 +58,7 @@ const Projects = ({ ...props }) => {
           cardFront={
             <CardFront
               style={{
-                backgroundColor: "rgb(24, 19, 42)",
+                backgroundColor: "#18132a",
                 fontFamily: "europa",
               }}
               logo={"Artist Photograph & Art Gallery"}
@@ -85,7 +82,7 @@ const Projects = ({ ...props }) => {
         <Card
           cardFront={
             <CardFront
-              style={{ backgroundColor: "rgb(0, 36, 81)" }}
+              style={{ backgroundColor: "#18132a" }}
               logo={<ElecLogo />}
             />
           }
@@ -101,7 +98,8 @@ const Projects = ({ ...props }) => {
             />
           }
         />
-      </article>
+        {/* </article> */}
+      </section>
     </main>
   )
 }

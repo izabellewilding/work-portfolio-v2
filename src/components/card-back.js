@@ -2,7 +2,6 @@ import React from "react"
 import "../styles/card-back.scss"
 import "../styles/projects.scss"
 import Img from "./image"
-import CardWave from "../assets/card-wave.svg"
 import GitHub from "../assets/github-darkRed.svg"
 
 const CardBack = ({ ...props }) => {
