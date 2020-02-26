@@ -32,13 +32,13 @@ const Layout = ({ children }) => {
   return (
     <>
       {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
-      <div className="scrolling-box"></div>
-      <Header />
-
-      <LandingPage />
-      <Projects />
-      <About />
-      <Footer />
+      <div className="scrolling-box">
+        <Header />
+        <LandingPage id="1" />
+        <Projects id="projects" />
+        <About id="3" />
+        <Footer />
+      </div>
       {/* <footer>
         © {new Date().getFullYear()}, Built with
         {` `}

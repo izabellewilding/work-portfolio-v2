@@ -20,10 +20,13 @@ const Gradient = styled.div`
   );
 `
 
-const LandingPage = () => {
+const LandingPage = props => {
   return (
     //landing page top
-    <main className="gradient w-full h-screen relative items-center justify-center ">
+    <main
+      {...props}
+      className="gradient w-full h-screen relative items-center justify-center "
+    >
       {" "}
       <div className="relative w-full h-screen">
         {" "}
@@ -73,12 +76,14 @@ const LandingPage = () => {
             Freelance Web Developer
           </p>{" "}
           <SocialIcons />
-          <button
+          <a
+            href="#projects"
             class="absolute bottom-0 bg-transparent hover:bg-blue-500 text-blue-100 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded  quicksand"
             style={{ bottom: "21%" }}
+            role="button"
           >
             Click to See Projects
-          </button>
+          </a>
         </div>{" "}
       </div>{" "}
       {/* </div>{" "} */}

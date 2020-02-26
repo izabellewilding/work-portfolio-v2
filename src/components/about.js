@@ -1,8 +1,8 @@
 import React from "react"
 
-const About = () => {
+const About = props => {
   return (
-    <div className="flex flex-wrap items-center mt-24 mb-24">
+    <div {...props} className="w-full h-full flex flex-wrap items-center">
       <div className="w-full md:w-5/12 px-4 mr-auto ml-auto">
         {/* <div className="text-gray-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-gray-100">
           <i className="fas fa-user-friends text-xl"></i>

@@ -22,9 +22,12 @@ const Card = ({ cardFront, cardBack }) => {
   )
 }
 
-const Projects = ({ ...props }) => {
+const Projects = props => {
   return (
-    <main className="project-section">
+    <main
+      {...props}
+      className=" w-full h-full flex align-middle justify-evenly "
+    >
       <section className="projects pb-20 ">
         {" "}
         <Card

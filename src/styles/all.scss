@@ -55,6 +55,12 @@ $darkBlue: #18132a;
 
 $mobileBreakpoint: 750px;
 
+.scrolling-box {
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+  height: 100vh;
+}
+
 .text-darkBlue {
   color: $darkBlue;
 }
