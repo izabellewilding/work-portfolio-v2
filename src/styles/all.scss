@@ -59,6 +59,10 @@ $mobileBreakpoint: 750px;
   scroll-behavior: smooth;
   overflow-y: scroll;
   height: 100vh;
+
+  @media (max-width: 768px) {
+    overflow-y: unset;
+  }
 }
 
 .text-darkBlue {
@@ -76,7 +80,7 @@ $mobileBreakpoint: 750px;
   height: 22rem;
 
   @media (min-width: 750px) {
-    height: 35rem;
+    height: 27rem;
   }
 }
 
@@ -105,6 +109,17 @@ $mobileBreakpoint: 750px;
 
 .lightSVG {
   fill: $lightestBlue;
+}
+
+.pinkSVG {
+  fill: $pink;
+}
+
+.bg-pink {
+  background: $pink;
+}
+.text-light {
+  color: $lightestBlue;
 }
 
 .card-stlye {

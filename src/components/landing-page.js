@@ -78,7 +78,7 @@ const LandingPage = props => {
           <SocialIcons />
           <a
             href="#projects"
-            class="absolute bottom-0 bg-transparent hover:bg-blue-500 text-blue-100 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded  quicksand"
+            class="invisible md:visible absolute bottom-0 bg-transparent hover:bg-blue-500 text-blue-100 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded  quicksand"
             style={{ bottom: "21%" }}
             role="button"
           >

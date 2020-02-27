@@ -54,16 +54,17 @@
   background: transparent;
 
   .card-back-title {
-    background: #f4feff;
-    // text-transform: uppercase;
-    padding: 1rem;
     margin-bottom: 0;
+    font-size: 1.25rem;
+    color: $lightestBlue;
+    text-align: center;
+    text-transform: uppercase;
   }
 
-  .card-back-subtitle {
-    padding: 1rem;
-    padding-bottom: 0rem;
-  }
+  // .card-back-subtitle {
+  //   padding: 1rem;
+  //   padding-bottom: 0rem;
+  // }
 
   ul {
     color: $lightestBlue;
@@ -108,8 +109,8 @@
     text-transform: uppercase;
     text-decoration: none;
     background-color: transparent;
-    border-style: solid;
-    border-color: $lightestBlue;
+
+    border: solid 1px $lightestBlue;
     color: $lightestBlue;
     cursor: pointer;
     font-family: "quicksand";

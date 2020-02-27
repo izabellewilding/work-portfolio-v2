@@ -36,7 +36,7 @@ const Layout = ({ children }) => {
         <Header />
         <LandingPage id="1" />
         <Projects id="projects" />
-        <About id="3" />
+        <About id="about" />
         <Footer />
       </div>
       {/* <footer>

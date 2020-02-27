@@ -9,10 +9,8 @@ const CardBack = ({ ...props }) => {
     <div className="card-back" {...props}>
       <div className="card-gradient"></div>
 
-      <div className="card-text-wrapper">
-        <h3 className="card-back-title" style={{ color: "#18132a" }}>
-          {props.cardTitle}
-        </h3>
+      <div className="card-text-wrapper p-5">
+        <h3 className="card-back-title">Main Features</h3>
         {/* <h3 className="card-back-subtitle">Features</h3> */}
         <ul>
           <li>{props.listItem1}</li>
