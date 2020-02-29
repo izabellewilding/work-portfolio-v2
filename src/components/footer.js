@@ -68,7 +68,7 @@ const Footer = () => {
                       className="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
                       href="https://www.creative-tim.com/presentation"
                     >
-                      About Us
+                      Blog
                     </a>
                   </li>
                   <li>
@@ -76,7 +76,7 @@ const Footer = () => {
                       className="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
                       href="https://blog.creative-tim.com"
                     >
-                      Blog
+                      Resume
                     </a>
                   </li>
                   <li>
@@ -84,17 +84,17 @@ const Footer = () => {
                       className="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
                       href="https://www.github.com/creativetimofficial"
                     >
-                      Github
+                      Art
                     </a>
                   </li>
-                  <li>
+                  {/* <li>
                     <a
                       className="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
                       href="https://www.creative-tim.com/bootstrap-themes/free"
                     >
                       Free Products
                     </a>
-                  </li>
+                  </li> */}
                 </ul>
               </div>
               <div className="w-full lg:w-4/12 px-4">
