@@ -1,8 +1,12 @@
 import React from "react"
+import { Link } from "gatsby"
+import GitHub from "../assets/github-darkRed.svg"
+import Email from "../assets/email-darkRed.svg"
+import LinkedIn from "../assets/linkedin-darkRed.svg"
 
 const Footer = () => {
   return (
-    <footer className="relative bg-darkBlue pt-8 pb-6">
+    <footer className="relative bg-lightBlue pt-8 pb-6">
       <div
         className="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20 text-light"
         style={{ height: "80px", transform: "translateZ(0)" }}
@@ -29,65 +33,74 @@ const Footer = () => {
             <h5 className="text-lg mt-0 mb-2 text-light">
               Find me on these platforms - or say hello!
             </h5>
-            <div className="mt-6">
-              <button
-                className="bg-white text-blue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+            <div className="mt-6 flex flex-row">
+              <a
+                href="https://github.com/izabellewilding"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white text-blue-400 flex shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
                 type="button"
               >
-                <i className="fab fa-twitter"></i>
-              </button>
-              <button
-                className="bg-white text-blue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                <GitHub className="social-icon-footer" />{" "}
+              </a>
+              <a
+                href="https://www.linkedin.com/in/izabelle-wilding-b68a73130/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white text-blue-600 shadow-lg flex font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
                 type="button"
               >
-                <i className="fab fa-facebook-square"></i>
-              </button>
-              <button
+                <LinkedIn className="social-icon-footer" />
+              </a>
+              {/* <button
                 className="bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
                 type="button"
               >
                 <i className="fab fa-dribbble"></i>
-              </button>
-              <button
-                className="bg-white text-gray-900 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+              </button> */}
+              <a
+                href="mailto:izabellewilding@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white text-gray-900 shadow-lg font-normal h-10 w-10 flex items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
                 type="button"
               >
-                <i className="fab fa-github"></i>
-              </button>
+                <Email className="social-icon-footer" />
+              </a>
             </div>
           </div>
           <div className="w-full lg:w-6/12 px-4">
             <div className="flex flex-wrap items-top mb-6">
-              <div className="w-full lg:w-4/12 px-4 ml-auto">
+              {/* <div className="w-full lg:w-4/12 px-4 ml-auto">
                 <span className="block uppercase text-gray-600 text-sm font-semibold mb-2">
                   Useful Links
-                </span>
-                <ul className="list-unstyled">
-                  <li>
+                </span> */}
+              {/* <ul className="list-unstyled"> */}
+              {/* <li>
                     <a
                       className="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
                       href="https://www.creative-tim.com/presentation"
                     >
                       Blog
                     </a>
-                  </li>
-                  <li>
+                  </li> */}
+              {/* <li>
                     <a
                       className="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
                       href="https://blog.creative-tim.com"
                     >
                       Resume
                     </a>
-                  </li>
-                  <li>
+                  </li> */}
+              {/* <li>
                     <a
                       className="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
                       href="https://www.github.com/creativetimofficial"
                     >
                       Art
                     </a>
-                  </li>
-                  {/* <li>
+                  </li> */}
+              {/* <li>
                     <a
                       className="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
                       href="https://www.creative-tim.com/bootstrap-themes/free"
@@ -95,9 +108,9 @@ const Footer = () => {
                       Free Products
                     </a>
                   </li> */}
-                </ul>
-              </div>
-              <div className="w-full lg:w-4/12 px-4">
+              {/* </ul>
+              </div> */}
+              {/* <div className="w-full lg:w-4/12 px-4">
                 <span className="block uppercase text-gray-600 text-sm font-semibold mb-2">
                   Other Resources
                 </span>
@@ -135,7 +148,7 @@ const Footer = () => {
                     </a>
                   </li>
                 </ul>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

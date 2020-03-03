@@ -118,12 +118,20 @@ $mobileBreakpoint: 750px;
 .bg-pink {
   background: $pink;
 }
+.bg-lightBlue {
+  background-color: #9bc9cb;
+}
 .text-light {
   color: $lightestBlue;
 }
 
 .card-stlye {
   border: solid black 1px;
+}
+
+.social-icon-footer {
+  height: 1.25rem;
+  width: 1.25rem;
 }
 
 //nav
