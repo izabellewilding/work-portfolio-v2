@@ -27,11 +27,11 @@ const Projects = props => {
   return (
     <main
       {...props}
-      className=" w-full min-h-full flex justify-center items-center"
+      className=" w-full min-h-full flex justify-center items-center "
     >
-      <div className="container inline-block">
+      <div className="container inline-block bg-lightestBlue pb-16">
         <div classname="section">
-          <h1 className="text-3xl text-blue-900 md:pb-8 md:pl-16 pl-2 pl-4 pt-8 uppercase quicksand">
+          <h1 className="text-3xl text-blue-900 md:pb-4 md:pl-16 pl-2 pl-4 pt-8 uppercase quicksand">
             Projects
           </h1>{" "}
           <a>{GitHub}</a>

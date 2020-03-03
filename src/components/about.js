@@ -1,13 +1,19 @@
 import React from "react"
 import Image from "./image"
+import WhatIDo from "../assets/what-i-do.svg"
+
 const About = props => {
   return (
-    <div {...props} className="w-full min-h-full flex flex-wrap items-center">
+    <div
+      {...props}
+      className="w-full min-h-full flex flex-wrap items-center .bg-lightBlue"
+    >
       <div className="w-full md:w-5/12 px-4 mr-auto ml-auto">
         {/* <div className="text-gray-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-gray-100">
           <i className="fas fa-user-friends text-xl"></i>
         </div> */}
-        <h3 className="text-3xl mb-2 font-semibold leading-normal">About Me</h3>
+        {/* <h3 className="text-3xl mb-2 font-semibold leading-normal">About Me</h3> */}
+        <WhatIDo className="pb-4 pt-4 h-24" />
         <p className="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-700"></p>
         <p className="text-lg font-light leading-relaxed mt-0 mb-4 text-gray-700">
           I hadn't always planned to become a web developer, but my love for

@@ -3,6 +3,17 @@ import { Link } from "gatsby"
 import GitHub from "../assets/github-darkRed.svg"
 import Email from "../assets/email-darkRed.svg"
 import LinkedIn from "../assets/linkedin-darkRed.svg"
+import styled from "styled-components"
+
+const Gradient = styled.div`
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 1, 62, 0.5055894183845413) 29%,
+    rgba(0, 13, 104, 0.15825048281031162) 59%,
+    rgba(198, 204, 214, 0) 100%
+  );
+`
 
 const Footer = () => {
   return (
@@ -165,7 +176,8 @@ const Footer = () => {
               </a>
             </div>
           </div>
-        </div>
+        </div>{" "}
+        <Gradient />
       </div>
     </footer>
   )
