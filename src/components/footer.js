@@ -38,12 +38,15 @@ const Footer = () => {
         </svg> */}
       </div>
       <div className="container mx-auto px-4">
+        {" "}
         <div className="flex flex-wrap">
           <div className="w-full lg:w-6/12 px-4">
+            {" "}
+            <Gradient className="w-full h-full absolute bottom-0 right-0 top-0 left-0 opacity-50  " />
             <h4 className="text-3xl font-semibold .text-light">Get in touch</h4>
             <h5 className="text-lg mt-0 mb-2 text-light">
               Find me on these platforms - or say hello!
-            </h5>
+            </h5>{" "}
             <div className="mt-6 flex flex-row">
               <a
                 href="https://github.com/izabellewilding"
@@ -177,7 +180,6 @@ const Footer = () => {
             </div>
           </div>
         </div>{" "}
-        <Gradient />
       </div>
     </footer>
   )
