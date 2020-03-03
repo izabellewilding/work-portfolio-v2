@@ -69,10 +69,10 @@ const LandingPage = props => {
         {" "}
         {/* hero text */}
         <div className="relative h-full w-full mx-auto items-center justify-center flex flex-col lg:w-6/12 px-4 ml-auto mr-auto text-center">
-          <h1 className=" mb-2 text-white text-5xl md:text-6xl uppercase test text-darkBlue">
+          <h1 className=" text-white text-5xl md:text-6xl uppercase test text-darkBlue">
             Izabelle Wilding
           </h1>{" "}
-          <p className="quicksand text-2xl md:text-3xl text-white mb-6">
+          <p className="quicksand text-2xl md:text-3xl text-white ">
             Freelance Web Developer
           </p>{" "}
           <SocialIcons />

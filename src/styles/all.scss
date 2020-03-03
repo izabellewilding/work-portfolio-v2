@@ -75,12 +75,12 @@ $mobileBreakpoint: 750px;
 
 .bird {
   fill: $darkBlue;
-  top: -5rem;
+  top: -12rem;
   right: 0;
   height: 22rem;
 
   @media (min-width: 750px) {
-    height: 27rem;
+    height: 40rem;
   }
 }
 
