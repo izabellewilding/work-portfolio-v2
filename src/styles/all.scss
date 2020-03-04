@@ -1,3 +1,5 @@
+$mobileBreakpoint: 768px;
+
 @font-face {
   font-family: "chivo";
   src: url(../fonts/Chivo-Regular.ttf);
@@ -32,6 +34,30 @@
 
 .text-massive {
   font-size: 6rem;
+}
+.landing-title-decoration {
+  top: -130%;
+  left: -3rem;
+  height: 9.8rem;
+
+  @media (min-width: $mobileBreakpoint) {
+    top: -79px;
+    left: -65px;
+    height: 14rem;
+  }
+}
+.landing-heading {
+  font-size: 2.45rem;
+  @media (min-width: $mobileBreakpoint) {
+    font-size: 3rem;
+  }
+}
+.landing-subheading {
+  font-size: 1.05rem;
+
+  @media (min-width: $mobileBreakpoint) {
+    font-size: 1.27rem;
+  }
 }
 //colors
 

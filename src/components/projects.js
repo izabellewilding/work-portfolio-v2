@@ -27,13 +27,13 @@ const Projects = props => {
   return (
     <main
       {...props}
-      className="w-full min-h-full flex justify-center items-center "
+      className="w-full min-h-full flex justify-center items-center  "
     >
-      <div className="z-20 container inline-block pb-16 border-black bg-lightPrimary">
+      <div className="z-20 container inline-block pb-16 border-black">
         <div classname="section">
-          <h1 className="text-3xl text-darkPrimary md:pb-4 md:pl-16 pl-2 pl-4 pt-8 uppercase chivo">
+          {/* <h1 className="text-3xl text-darkPrimary md:pb-4 md:pl-16 pl-2 pl-4 pt-8 uppercase chivo">
             Projects
-          </h1>{" "}
+          </h1>{" "} */}
           <a>{GitHub}</a>
         </div>
         <section className="projects">

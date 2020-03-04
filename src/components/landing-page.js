@@ -65,22 +65,22 @@ const LandingPage = props => {
       <div className=" w-full h-full absolute bottom-0 right-0 top-0 left-0">
         {" "}
         {/* hero text */}
-        <div className="relative h-full w-full mx-auto items-center justify-center flex flex-col lg:w-6/12 px-4 ml-auto mr-auto text-center">
-          <MyLogo className=" h-64" />
-          {/* <h1 className=" text-lightPrimary text-5xl md:text-6xl uppercase barlow-cond text-lightPrimary">
+        <div className=" whitespace-no-wrap relative h-full w-full mx-auto items-center justify-center flex flex-col lg:w-6/12 px-4 ml-auto mr-auto text-center">
+          <h1 className="landing-heading relative text-lightPrimary text-5xl md:text-6xl uppercase barlow-cond text-lightPrimary leading-none">
             Izabelle Wilding
+            <MyLogo className="landing-title-decoration absolute h-64" />
           </h1>{" "}
-          <p className="quicksand text-2xl md:text-3xl text-lightPrimary ">
+          <p className="landing-subheading quicksand text-2xl md:text-2xl text-lightPrimary uppercase">
             Freelance Web Developer
-          </p>{" "} */}
-          <a
+          </p>{" "}
+          {/* <a
             href="#projects"
             class="z-20 invisible md:visible absolute bottom-0 bg-transparent hover:bg-orange-100 hover:text-gray-900 text-orange-100 font-semibold hover:text-white py-2 px-4 border border text-orange-100 hover:border-transparent rounded  quicksand"
             style={{ bottom: "20%" }}
             role="button"
           >
             Click to See Projects
-          </a>
+          </a> */}
         </div>{" "}
       </div>{" "}
       {/* </div>{" "} */}

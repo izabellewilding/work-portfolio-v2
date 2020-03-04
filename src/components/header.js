@@ -8,9 +8,9 @@ import Logo from "../assets/text-logo2.svg"
 
 const Header = ({ siteTitle }) => (
   <header>
-    <div className="z-30 flex justify-between items-center fixed top-0 6 bg-transparent z-10 invisible md:visible">
-      <div className="flex-shrink-0 p-4 cursor-pointer">
-        <Logo className="h-16 lightSVG " />
+    <div className="z-30 flex justify-between w-screen items-center top-0 fixed 6 bg-white z-10 invisible md:visible shadow-sm">
+      <div className="flex-shrink-0 p-2 cursor-pointer">
+        <Logo className=" h-8 darkSVG " />
       </div>
       <i className="fas fa-bars fa-2x visible md:invisible mr-10 md:mr-0 text-blue-200 cursor-pointer"></i>
       {/* <ul className="quicksand md:flex overflow-x-hidden mr-10 font-semibold">
