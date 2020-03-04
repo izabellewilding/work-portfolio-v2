@@ -60,7 +60,7 @@ const LandingPage = props => {
       </div>{" "}
       {/* <Bird className="absolute opacity-75 bird" />{" "} */}
       <div className=" absolute opacity-25 bottom-0 right-0 top-0 left-0" />
-      {/* <Gradient className="w-full h-full absolute bottom-0 right-0 top-0 left-0 " /> */}
+      <Gradient className="w-full h-full absolute bottom-0 right-0 top-0 left-0 " />
       {/* <div className="absolute top-0 w-full h-full bg-center bg-cover"> */}{" "}
       <div className=" w-full h-full absolute bottom-0 right-0 top-0 left-0">
         {" "}
@@ -76,7 +76,7 @@ const LandingPage = props => {
           <a
             href="#projects"
             class="z-20 invisible md:visible absolute bottom-0 bg-transparent hover:bg-orange-100 hover:text-gray-900 text-orange-100 font-semibold hover:text-white py-2 px-4 border border text-orange-100 hover:border-transparent rounded  quicksand"
-            style={{ bottom: "25%" }}
+            style={{ bottom: "20%" }}
             role="button"
           >
             Click to See Projects

@@ -19,10 +19,7 @@ import mainImg from "../images/leafy-bg.jpg"
 
 const Footer = () => {
   return (
-    <footer
-      style={{ backgroundImage: `url(${mainImg})` }}
-      className="relative  pt-20 pb-12 "
-    >
+    <footer className="relative  pt-20 pb-12 bg-darkSecondary">
       <div
         className="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20 text-light"
         style={{
