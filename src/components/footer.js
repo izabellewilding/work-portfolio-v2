@@ -4,23 +4,31 @@ import GitHub from "../assets/github-darkRed.svg"
 import Email from "../assets/email-darkRed.svg"
 import LinkedIn from "../assets/linkedin-darkRed.svg"
 import styled from "styled-components"
+import FloatingIcons from "./floating-icons"
+import mainImg from "../images/leafy-bg.jpg"
 
-const Gradient = styled.div`
-  background: linear-gradient(
-    0deg,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(0, 1, 62, 0.5055894183845413) 29%,
-    rgba(0, 13, 104, 0.15825048281031162) 59%,
-    rgba(198, 204, 214, 0) 100%
-  );
-`
+// const Gradient = styled.div`
+//   background: linear-gradient(
+//     0deg,
+//     rgba(0, 0, 0, 1) 0%,
+//     rgba(0, 1, 62, 0.5055894183845413) 29%,
+//     rgba(0, 13, 104, 0.15825048281031162) 59%,
+//     rgba(198, 204, 214, 0) 100%
+//   );
+// `
 
 const Footer = () => {
   return (
-    <footer className="relative bg-lightBlue pt-8 pb-6">
+    <footer
+      style={{ backgroundImage: `url(${mainImg})` }}
+      className="relative  pt-20 pb-12 "
+    >
       <div
         className="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20 text-light"
-        style={{ height: "80px", transform: "translateZ(0)" }}
+        style={{
+          height: "80px",
+          transform: "translateZ(0)",
+        }}
       >
         {/* <svg
           className="absolute bottom-0 overflow-hidden"
@@ -42,9 +50,11 @@ const Footer = () => {
         <div className="flex flex-wrap">
           <div className="w-full lg:w-6/12 px-4">
             {" "}
-            <Gradient className="w-full h-full absolute bottom-0 right-0 top-0 left-0 opacity-50  " />
-            <h4 className="text-3xl font-semibold .text-light">Get in touch</h4>
-            <h5 className="text-lg mt-0 mb-2 text-light">
+            {/* <Gradient className="w-full h-full absolute bottom-0 right-0 top-0 left-0 opacity-50  " /> */}
+            <h4 className="text-3xl font-semibold text-lightPrimary">
+              Get in touch
+            </h4>
+            <h5 className="text-lg mt-0 mb-2 text-lightPrimary">
               Find me on these platforms - or say hello!
             </h5>{" "}
             <div className="mt-6 flex flex-row">
@@ -55,7 +65,7 @@ const Footer = () => {
                 className="bg-white text-blue-400 flex shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
                 type="button"
               >
-                <GitHub className="social-icon-footer" />{" "}
+                <GitHub className="social-icon" />{" "}
               </a>
               <a
                 href="https://www.linkedin.com/in/izabelle-wilding-b68a73130/"
@@ -64,7 +74,7 @@ const Footer = () => {
                 className="bg-white text-blue-600 shadow-lg flex font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
                 type="button"
               >
-                <LinkedIn className="social-icon-footer" />
+                <LinkedIn className="social-icon" />
               </a>
               {/* <button
                 className="bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
@@ -79,7 +89,7 @@ const Footer = () => {
                 className="bg-white text-gray-900 shadow-lg font-normal h-10 w-10 flex items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
                 type="button"
               >
-                <Email className="social-icon-footer" />
+                <Email className="social-icon" />
               </a>
             </div>
           </div>

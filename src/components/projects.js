@@ -27,11 +27,11 @@ const Projects = props => {
   return (
     <main
       {...props}
-      className=" w-full min-h-full flex justify-center items-center "
+      className="w-full min-h-full flex justify-center items-center "
     >
-      <div className="container inline-block bg-lightestBlue pb-16">
+      <div className="z-20 container inline-block pb-16 border-black bg-lightPrimary">
         <div classname="section">
-          <h1 className="text-3xl text-blue-900 md:pb-4 md:pl-16 pl-2 pl-4 pt-8 uppercase quicksand">
+          <h1 className="text-3xl text-darkPrimary md:pb-4 md:pl-16 pl-2 pl-4 pt-8 uppercase chivo">
             Projects
           </h1>{" "}
           <a>{GitHub}</a>
@@ -41,8 +41,9 @@ const Projects = props => {
           <Card
             cardFront={
               <CardFront
+                style={{ backgroundColor: "#d9dfe0" }}
                 // logo={<FoodBlogLogo />}
-                cardImage="../images/abof-img.png"
+                // cardImage="../images/abof-img.png"
                 cardTitle="Food recipe blog"
               />
             }
@@ -64,10 +65,8 @@ const Projects = props => {
             <Card
               cardFront={
                 <CardFront
-                  style={{
-                    fontFamily: "europa",
-                  }}
-                  cardImage="../images/flickrapi-img.JPG"
+                  style={{ backgroundColor: "#173b47" }}
+                  // cardImage="../images/flickrapi-img.JPG"
                   // logo={"Artist Photograph & Art Gallery"}
                   cardTitle="Flickr Image Gallery"
                 />
@@ -98,9 +97,9 @@ const Projects = props => {
           <Card
             cardFront={
               <CardFront
-                style={{ backgroundColor: "#18132a" }}
+                style={{ backgroundColor: "#161d27" }}
                 // logo={<ElecLogo />}
-                cardImage="../images/elec-site-img.png"
+                // cardImage="../images/elec-site-img.png"
                 cardTitle="Small business website"
               />
             }

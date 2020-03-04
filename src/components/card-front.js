@@ -19,6 +19,7 @@ const CardFront = ({ ...props }) => {
   return (
     <div
       className="card-front relative"
+      stlye={{ backgroundColor: "#28323b" }}
       {...props}
       // style={{
       //   border: "solid black 1px",
@@ -29,12 +30,12 @@ const CardFront = ({ ...props }) => {
         className="card-font-image-wrapper absolute top-0 bottom-0 right-0 left-0"
         {...props}
       >
-        <Img src={props.cardImage} className="card-img " />
+        {/* <Img src={props.cardImage} className="card-img " /> */}
       </div>{" "}
-      <Gradient className=" absolute top-0 bottom-0 right-0 left-0" />
-      <p className="absolute bottom-0 left-0 text-white text-3xl flex quicksand uppercase p-5">
+      {/* <Gradient className=" absolute top-0 bottom-0 right-0 left-0" /> */}
+      <p className="absolute top-0 left-0 text-lightPrimary  text-3xl flex quicksand uppercase p-5">
         {props.cardTitle}
-      </p>
+      </p>{" "}
     </div>
   )
 }

@@ -1,6 +1,6 @@
 @font-face {
-  font-family: "amatic";
-  src: url(../fonts/AmaticSC-Regular.ttf);
+  font-family: "chivo";
+  src: url(../fonts/Chivo-Regular.ttf);
   font-display: swap;
 }
 
@@ -11,33 +11,23 @@
 }
 
 @font-face {
-  font-family: "test";
-  src: url(../fonts/BarlowCondensed-Medium.ttf);
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "serif-pro";
-  src: url(../fonts/SourceSerifPro-Regular.ttf);
+  font-family: "barlow-cond";
+  src: url(../fonts/BarlowCondensed-Light.ttf);
   font-display: swap;
 }
 
 //fonts
 
-.amatic {
-  font-family: "amatic";
+.chivo {
+  font-family: "chivo";
 }
 
 .quicksand {
   font-family: "quicksand";
 }
 
-.test {
-  font-family: "test";
-}
-
-.serif-pro {
-  font-family: "serif-pro";
+.barlow-cond {
+  font-family: "barlow-cond";
 }
 
 .text-massive {
@@ -45,12 +35,57 @@
 }
 //colors
 
-$darkRed: #4f0000;
-$pink: #ff0481;
-$brown: #7f6c73;
-$lightestBlue: #eaffff;
-$darkBlue: #18132a;
+$darkPrimary: #120703;
+$midPrimary: #bd8656;
+$lightPrimary: #fffcf7;
 
+$darkSecondary: #0b0e16;
+$midSecondary: #173b47;
+$lightSecondary: #d9dfe0;
+
+//background color
+.bg-darkPrimary {
+  background-color: $darkPrimary;
+}
+
+.bg-midPrimary {
+  background-color: $midPrimary;
+}
+
+.bg-lightPrimary {
+  background-color: $lightPrimary;
+}
+
+.bg-lightSecondary {
+  background-color: $lightSecondary;
+}
+
+.bg-midSecondary {
+  background-color: $midSecondary;
+}
+
+.bg-darkSecondary {
+  background-color: $darkSecondary;
+}
+//font color
+.text-darkPrimary {
+  color: $darkPrimary;
+}
+.text-midPrimary {
+  color: $midPrimary;
+}
+.text-lightPrimary {
+  color: $lightPrimary;
+}
+.text-darkSecondary {
+  color: $darkSecondary;
+}
+.text-midSecondary {
+  color: $midSecondary;
+}
+.text-lightSecondary {
+  color: $lightSecondary;
+}
 //breakpoints
 
 $mobileBreakpoint: 750px;
@@ -65,94 +100,92 @@ $mobileBreakpoint: 750px;
   }
 }
 
-.text-darkBlue {
-  color: $darkBlue;
-}
+// .text-darkBlue {
+//   color: $darkPrimary;
+// }
 
-.bg-darkBlue {
-  background: $darkBlue;
-}
+// .bg-dark {
+//   background: #020202;
+// }
 
-.bird {
-  fill: $darkBlue;
-  top: -5rem;
-  right: 0;
-  height: 22rem;
+// .bird {
+//   fill: $darkPrimary;
+//   top: -5rem;
+//   right: 0;
+//   height: 22rem;
 
-  @media (min-width: 750px) {
-    height: 40rem;
-    top: -12rem;
-  }
-}
+//   @media (min-width: 750px) {
+//     height: 40rem;
+//     top: -12rem;
+//   }
+// }
 
-.splash {
-  left: 10%;
-}
+// .splash {
+//   left: 10%;
+// }
 
-.splash-med-left {
-  left: 10%;
-}
+// .splash-med-left {
+//   left: 10%;
+// }
 
-.splash2 {
-  right: 20%;
-  transform: rotateX(180deg);
-}
+// .splash2 {
+//   right: 20%;
+//   transform: rotateX(180deg);
+// }
 
-.blob-splash {
-  left: 25%;
-  bottom: 1%;
-}
+// .blob-splash {
+//   left: 25%;
+//   bottom: 1%;
+// }
 
-.small-splash {
-  top: 5%;
-  right: 25%;
-}
+// .small-splash {
+//   top: 5%;
+//   right: 25%;
+// }
+
+// .wave {
+//   bottom: -3rem;
+//   @media (max-width: $mobileBreakpoint) {
+//     display: none;
+//   }
+// }
+// .whiteSVG {
+//   fill: white;
+// }
 
 .lightSVG {
-  fill: $lightestBlue;
+  fill: $lightPrimary;
 }
 
-.pinkSVG {
-  fill: $pink;
-}
-
-.bg-pink {
-  background: $pink;
-}
-.bg-lightBlue {
-  background-color: #9bc9cb;
-}
-.bg-lightestBlue {
-  background-color: #93bdc52e;
-}
-.text-light {
-  color: $lightestBlue;
-}
+// .bg-lightSecondary {
+//   background-color: #9bc9cb;
+// }
+// .bg-lightSecondary {
+//   background-color: #93bdc52e;
+// }
+// .text-light {
+//   color: $lightSecondary;
+// }
 
 .card-stlye {
   border: solid black 1px;
-}
-
-.social-icon-footer {
-  height: 1.25rem;
-  width: 1.25rem;
 }
 
 //nav
 
 .nav-list-item {
   padding: 1rem;
-  color: $darkBlue;
+  color: $darkPrimary;
   position: relative;
   text-decoration: none;
   text-transform: uppercase;
 
   &:hover {
-    color: $darkRed;
+    color: $darkPrimary;
   }
   &:focus,
   &:active {
-    color: $pink;
+    color: $lightPrimary;
   }
 }
 
@@ -244,9 +277,6 @@ $mobileBreakpoint: 750px;
 //end header hamburger icon
 
 //RMWC Drawer content
-.nav-logo {
-  fill: $darkRed;
-}
 
 .nav .mdc-drawer--modal + .mdc-drawer-scrim {
   background-color: #ffffff00;

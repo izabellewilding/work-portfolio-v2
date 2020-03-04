@@ -1,19 +1,24 @@
 import React from "react"
 import Image from "./image"
 import WhatIDo from "../assets/what-i-do.svg"
-
+import FloatingIcons from "./floating-icons"
 const About = props => {
   return (
     <div
       {...props}
-      className="w-full min-h-full flex flex-wrap items-center .bg-lightBlue"
+      className="relative w-full min-h-full flex flex-wrap items-center .bg-lightBlue"
     >
-      <div className="w-full md:w-5/12 px-4 mr-auto ml-auto">
+      {" "}
+      <FloatingIcons className=" tech-icons" />
+      <div className=" w-full md:w-5/12 px-4 mr-auto ml-auto">
+        {" "}
         {/* <div className="text-gray-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-gray-100">
           <i className="fas fa-user-friends text-xl"></i>
         </div> */}
-        {/* <h3 className="text-3xl mb-2 font-semibold leading-normal">About Me</h3> */}
-        <WhatIDo className="pb-4 pt-4 h-24" />
+        <h1 className="text-3xl text-darkPrimary pt-8 uppercase chivo">
+          About Me
+        </h1>
+        {/* <WhatIDo className="pb-4 pt-4 h-24" /> */}
         <p className="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-700"></p>
         <p className="text-lg font-light leading-relaxed mt-0 mb-4 text-gray-700">
           I hadn't always planned to become a web developer, but my love for
@@ -30,15 +35,14 @@ const About = props => {
           convert my art and hand drawn images in SVGs for my sites.
         </p>
       </div>
-
       <div className="w-full md:w-4/12 px-4 mr-auto ml-auto">
         <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-pink">
-          <Image
+          {/* <Image
             alt="..."
             src="../images/daiga-ellaby-h43VqtlnV7U-unsplash.jpg"
             className="w-full align-middle rounded-t-lg"
             style={{ maxHeight: "220px" }}
-          />
+          /> */}
           <blockquote className="relative p-8 mb-4">
             <svg
               preserveAspectRatio="none"

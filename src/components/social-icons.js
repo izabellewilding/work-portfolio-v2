@@ -9,7 +9,7 @@ import "../styles/social-icons.scss"
 const SocialIcons = props => {
   return (
     <div className="social-bar">
-      <div className="flex">
+      <div className="flex flex-col fixed right-0">
         <a
           href="https://github.com/izabellewilding"
           target="_blank"
